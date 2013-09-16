@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPages_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="../Scripts/jquery-2.0.0.min.js"></script>
+    <script src="../Scripts/metroui/accordion.js"></script>
+    <script src="../Scripts/metroui/buttonset.js"></script>
+    <script src="../Scripts/metroui/calendar.js"></script>
+    <script src="../Scripts/metroui/carousel.js"></script>
+    <script src="../Scripts/metroui/dialog.js"></script>
+    <script src="../Scripts/metroui/dropdown.js"></script>
+    <script src="../Scripts/metroui/input-control.js"></script>
+    <script src="../Scripts/metroui/pagecontrol.js"></script>
+    <script src="../Scripts/metroui/rating.js"></script>
+    <script src="../Scripts/metroui/slider.js"></script>
+    <script src="../Scripts/metroui/tile-drag.js"></script>
+    <script src="../Scripts/metroui/tile-slider.js"></script>
+    <script src="../Scripts/global.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrap">
+            <div class="container">
+                <Gadget:topmenu ID="topmenu" runat="server" />
+                <%--<div class="nav-bar">
+                    <div class="nav-bar-inner">
+                        <div id="menutopline"></div>
+                        <a href="../Pages/Default.aspx">
+                            <span class="element brand">
+                                <img class="place-left" src="../Content/metroui/images/logo/logo6.gif" />
+                            </span>
+                        </a>
+                        <span class="pull-menu"></span>
+                        <div class="divider"></div>
+
+                        <ul class="menu">
+                            <li data-role="dropdown">
+                                <a href="#"><i class="glyphicon glyphicon-home"></i>&nbsp;<asp:Literal ID="Literal3" runat="server" Text="<%$Resources:scil.language,aboutus%>" /></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">ความเป็นมา</a></li>
+                                    <li><a href="#">วิสัยทัศน์</a></li>
+                                    <li><a href="#">คณะกรรมการบริษัท</a></li>
+                                    <li><a href="#">คณะผู้บริหาร</a></li>
+                                    <li><a href="#">รายงานผลประกอบการ</a></li>
+                                    <li><a href="#">นักลงทุนสัมพันธ์</a></li>
+                                    <li><a href="#">โครงสร้างองค์กร</a></li>
+                                </ul>
+                            </li>
+                            <li data-role="dropdown"><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i>&nbsp;ผลิตภัณฑ์</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../Pages/Products.aspx">ประกันภัยทรัพย์สิน</a></li>
+                                    <li><a href="#">ประกันภัยทางทะเลและขนส่ง</a></li>
+                                    <li><a href="#">ประกันภัยรถยนต์</a></li>
+                                    <li><a href="#">ประกันภัยสุขภาพ</a></li>
+                                    <li><a href="#">ประกันภัยเบ็ดเตล็ด</a></li>
+                                </ul>
+                            </li>
+                            <li data-role="dropdown"><a href="#">บริการ</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">แจ้งอุบัติเหตุ</a></li>
+                                    <li><a href="#">รายชื่อโรงพยาบาล</a></li>
+                                    <li><a href="#">อู่รถนต์ในเครือ</a></li>
+                                    <li><a href="#">วิธีการชำระเบี้ยประกันภัย</a></li>
+                                    <li><a href="#">ดาวน์โหลดแบบฟอร์ม</a></li>
+                                </ul>
+                            </li>
+                            <li data-role="dropdown"><a href="#">ติดต่อเรา</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">สำนักงานใหญ่</a></li>
+                                    <li><a href="#">เครือข่ายสาขา</a></li>
+                                    <li><a href="#">สำนักงานตัวแทน</a></li>
+                                    <li><a href="#">ร่วมงานกับเรา</a></li>
+                                    <li><a href="#">แนะนำติชม</a></li>
+                                </ul>
+                            </li>
+                            <li data-role="dropdown"><a href="#">Theme</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" onclick="utilities.setCookie('CurrentTheme','dark');location.reload();">Dark</a></li>
+                                    <li><a href="#" onclick="utilities.setCookie('CurrentTheme','bluesky');location.reload();">Blue Sky</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="span3 place-right" style="margin-right: 10px">
+                            <div id="language" class="place-right">
+                                <small><a href="#" onclick="utilities.setCookie('Lang','th-TH');location.reload();">TH</a>|<a href="#" onclick="utilities.setCookie('Lang','en-US');location.reload();">EN</a></small>
+                            </div>
+                            <div id="searchtool" class="input-control text span2 place-right">
+                                <input type="text" placeholder="ค้นหา" />
+                                <button class="btn-search"></button>
+                            </div>
+                        </div>
+                        <div id="menubottomline"></div>
+                    </div>
+                </div>--%>
+                <asp:ContentPlaceHolder ID="content" runat="server">
+                </asp:ContentPlaceHolder>
+                <Gadget:footer ID="footer" runat="server" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

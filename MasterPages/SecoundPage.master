@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SecoundPage.master.cs" Inherits="MasterPages_SecoundPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="../Scripts/jquery-2.0.0.min.js"></script>
+    <script src="../Scripts/metroui/accordion.js"></script>
+    <script src="../Scripts/metroui/buttonset.js"></script>
+    <script src="../Scripts/metroui/calendar.js"></script>
+    <script src="../Scripts/metroui/carousel.js"></script>
+    <script src="../Scripts/metroui/dialog.js"></script>
+    <script src="../Scripts/metroui/dropdown.js"></script>
+    <script src="../Scripts/metroui/input-control.js"></script>
+    <script src="../Scripts/metroui/pagecontrol.js"></script>
+    <script src="../Scripts/metroui/rating.js"></script>
+    <script src="../Scripts/metroui/slider.js"></script>
+    <script src="../Scripts/metroui/tile-drag.js"></script>
+    <script src="../Scripts/metroui/tile-slider.js"></script>
+    <script src="../Scripts/global.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrap">
+            <div class="container">
+                <Gadget:topmenu ID="topmenu" runat="server" />
+                <asp:ContentPlaceHolder ID="content" runat="server">
+                </asp:ContentPlaceHolder>
+                <Gadget:footer ID="footer" runat="server" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

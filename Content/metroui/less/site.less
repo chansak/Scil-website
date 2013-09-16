@@ -1,0 +1,36 @@
+﻿.wrap {
+    background:url(@wrap-image-path) no-repeat;
+    background-size: 100% 100%;
+    width: 100%; 
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    z-index: 0;
+    .container {
+        margin: 0 auto;
+        width: 960px;
+		background:url(@content-bgimage-path) no-repeat bottom right;
+        background-color:@global-bgcolor;
+        opacity:0.9;
+    }
+}
+.page-region{
+	.tile{
+		margin-left:20px;
+	}
+	.page-region-content{
+	min-height:600px;
+		.aside-header{
+			padding:10px;
+			margin-right:10px;
+		}
+    #tile {
+            margin-bottom:20px;
+        }
+	}
+}
+.aside-header + .accordion{
+	margin-right:10px;
+	background-color:@white;
+	opacity:0.8;
+}

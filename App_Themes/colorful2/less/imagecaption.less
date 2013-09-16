@@ -1,0 +1,176 @@
+﻿/* Image Box Style */
+.image-caption {
+    width: 150px;
+    height:150px;
+}
+    .image-caption .double {
+        width: 320px;
+        height:150px;
+    }
+.image-caption img {
+	position: absolute;
+	left: 0;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+}
+
+/* Caption Common Style */
+.image-caption .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: #fff;
+	z-index: 100;
+		-webkit-transition: all 300ms ease-out;
+		-moz-transition: all 300ms ease-out;
+		-o-transition: all 300ms ease-out;
+		-ms-transition: all 300ms ease-out;	
+		transition: all 300ms ease-out;
+	left: 0;
+}
+/** Caption 1: Simple **/
+.image-caption .simple-caption {
+    width:150px;
+	height: 30px;
+	display: block;
+	bottom: -30px;
+	line-height: 25pt;
+	text-align: center;
+}
+/** Caption 2: Full Width & Height **/
+.image-caption .full-caption {
+	height: 170px;	
+	top: -180px;
+	text-align: left;
+	padding: 15px;
+}
+
+/** Caption 3: Fade **/
+.image-caption .fade-caption, .image-caption .scale-caption  {
+	opacity: 0;
+	height: 170px;
+	text-align: left;
+	padding: 15px;
+}
+
+/** Caption 4: Slide **/
+.image-caption .slide-caption {
+	height: 170px;	
+	text-align: left;
+	padding: 15px;
+	left: 200px;
+}
+
+/** Caption 5: Rotate **/
+#box-5.image-caption .rotate-caption {
+	height: 170px;	
+	text-align: left;
+	padding: 15px;
+	top: 200px;
+	-moz-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+.image-caption .rotate {
+	height: 400px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+}
+
+/** Caption 6: Scale **/
+.image-caption .scale-caption h3, .image-caption .scale-caption p {
+	position: relative;
+	left: -200px;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	-o-transition: all 300ms ease-out;
+	-ms-transition: all 300ms ease-out;	
+	transition: all 300ms ease-out;
+}
+
+.image-caption .scale-caption h3 {
+	-webkit-transition-delay: 300ms;
+	-moz-transition-delay: 300ms;
+	-o-transition-delay: 300ms;
+	-ms-transition-delay: 300ms;	
+	transition-delay: 300ms;
+}
+
+.image-caption .scale-caption p {
+	-webkit-transition-delay: 500ms;
+	-moz-transition-delay: 500ms;
+	-o-transition-delay: 500ms;
+	-ms-transition-delay: 500ms;	
+	transition-delay: 500ms;
+}
+
+/** Simple Caption :hover Behaviour **/
+.image-caption:hover .simple-caption {
+	-moz-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	opacity: 1;
+	transform: translateY(-100%);
+}
+
+/** Full Caption :hover Behaviour **/
+.image-caption:hover .full-caption {
+	-moz-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	opacity: 0.9;
+	transform: translateY(100%);
+}
+
+/** Fade Caption :hover Behaviour **/
+.image-caption:hover .fade-caption, .image-caption:hover .scale-caption  {
+	opacity: 1;
+}
+
+/** Slide Caption :hover Behaviour **/
+.image-caption:hover .slide-caption {
+	background-color: rgba(0,0,0,1) !important;
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	opacity: 1;
+	transform: translateX(-100%);
+}
+.image-caption:hover img#image-4 {
+	-moz-transform: translateX(-100%);
+	-o-transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
+	opacity: 1;
+}
+
+/** Rotate Caption :hover Behaviour **/
+.image-caption:hover .rotate {
+	background-color: rgba(0,0,0,1) !important;
+	-moz-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+/** Scale Caption :hover Behaviour **/
+.image-caption:hover #image-6 {
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	transform: scale(1.4);
+}
+
+.image-caption:hover .scale-caption h3, .image-caption:hover .scale-caption p {
+	-moz-transform: translateX(200px);
+	-o-transform: translateX(200px);
+	-webkit-transform: translateX(200px);
+	transform: translateX(200px);
+}
